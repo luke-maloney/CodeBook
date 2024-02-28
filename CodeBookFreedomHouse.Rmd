@@ -1,0 +1,219 @@
+---
+title: "Code Book Freedom House"
+author: "Luke Maloney"
+date: "2024-02-25"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, 
+  eval=TRUE, 
+  fig.align = 'center',
+  message=FALSE,
+  warning=FALSE)
+# load packages
+  library(tidyverse)
+  library(knitr)
+  library(crayon)
+  library(tinytex)
+  library(ggplot2)
+  library(rmarkdown)
+  library(tibble)
+  library(readxl)
+```
+**OVERVIEW OF DATA**
+
+This data set includes the data from Freedom House's Freedom in the World report from 2019 to 2023 in countries that made up the former Soviet Union. Furthermore, it focuses on the political rights segment of the report and gives more memorable variable names to the questions asked instead of the traditional "A1, A2, A3 etc" approach of Freedom House. This set is useful for discovering trends over the previous five reports in the aforementioned region with regard to political rights in the various countries.
+
+**SOURCE AND METHODOLOGY**
+
+Freedom House's Freedom in the World report provides a comprehensive assessment of governmental institutions around the globe. At its core, it employs a systematic approach to score countries based on two primary factors: political rights and civil liberties. The methodology encompasses a range of factors, including political processes, governance structures, rule of law, freedom of expression, and respect for human rights.
+
+One of the primary components of the methodology is the scoring system. Each country is assigned a numerical score from 0 to 100 based on its performance in various categories. Each score is determined by a series of 25 questions related to the status of freedom scored on a scale from 0 to 4. These questions are further broken down into two categories. First, there are 10 questions related to political rights, allowing for a maximum score of 40 in that segment. This section is further broken down into three categories of questions related to the country’s electoral process, political pluralism and participation, and the functioning of government. Second, there are 15 questions related to civil liberties, allowing for a maximum score of 60. Once more, these questions are further broken down into separate categories, these being: freedom of expression and belief, associational and organizational rights, rule of law, and personal autonomy and individual rights. Additionally, points may be deducted outside of the 25 questions if there is a genocide, or events adjacent to a genocide, occurring in the respective country. These scores are then used to classify countries into three broad categories: Free, Partly Free, and Not Free. This classification provides a simple way to compare countries and track changes in their levels of freedom over time.
+
+Freedom House relies on a combination of quantitative data and qualitative analysis to determine their responses to each question. Quantitative indicators, such as election results, legal frameworks, and media ownership, provide objective measurements of freedom-related factors. Meanwhile, qualitative analysis involves assessing the broader context, including political dynamics, social trends, and government policies. Additionally, Freedom House employs a team of experts and researchers to conduct in-depth research, consult with local sources, and analyze a wide range of information sources to produce nuanced assessments of each country's freedom landscape. This approach helps to fill in the gaps where quantitative data is insufficient or fails to tell the entire story.
+
+Something important to note, however, is that Freedom House does not reassess its individual question scores with a blank slate annually. Instead, its analysts utilize the previous year’s score in conjunction with the data gathered during the current year to determine whether the score should be raised or lowered. This typically creates a steadier rating system that is less prone to wild swings annually due to differing employee perspectives or possible politically motivated changes. However, this approach is not without its drawbacks. These ratings may take a couple of years to accurately reflect subtler–and at times more drastic–changes in a country. Furthermore, each analysis is conducted on a country-by-country basis. That means that the team in charge of Belarus, for example, may interpret data in a slightly different way than the team from Azerbaijan. While Freedom House’s guidelines are clear, this could help explain why, at times, two broadly similar regimes have differing scores on the same question.
+
+**NOTE ON MISSING VALUES**
+
+Column Extra.Q2 only has missing values in data set FIW.FSU. This is because Freedom House did not redact points for the listed countries in the given time frame.
+
+**ITEMIZED PRESENTATION OF VARIABLES**
+
+**Country**
+
+Variable Name: Country
+
+Variable Type: Character
+
+Variable Description: Name of Country
+
+
+**Region**
+
+Variable Name: Region
+
+Variable Type: Character
+
+Variable Description: Name of Region as classified by Freedom House
+
+
+**Edition**
+
+Variable Name: Year
+
+Variable Type: Numerical
+
+Variable Description: Year of the Freedom House Freedom of the World edition
+
+
+**Status**
+
+Variable Name: Status
+
+Variable Type: Character
+
+Variable Description: Status of country as Free, Partly Free, or Not Free
+
+
+**Head of Government Free/Fair Elections**
+
+Variable Name: HOG.Free
+
+Variable Type: Numerical
+
+Variable Description: Question A1 on the Freedom in the World report. Values between 0 and 4; 4 is the best rating while 0 is the worst rating.
+
+*"Was the current head of government or other chief national authority elected through free and fair elections?"*
+
+
+**Legislature Free/Fair Elections**
+
+Variable Name: Leg.Free
+
+Variable Type: Numerical
+
+Variable Description: Question A2 on the Freedom in the World report. Values between 0 and 4; 4 is the best rating while 0 is the worst rating.
+
+*"Were the current national legislative representatives elected through free and fair elections?"*
+
+
+**Legal Framework**
+
+Variable Name: Legal Framework
+
+Variable Type: Numerical
+
+Variable Description: Question A3 on the Freedom in the World report. Values between 0 and 4; 4 is the best rating while 0 is the worst rating.
+
+*"Are the electoral laws and framework fair, and are they implemented impartially by the relevant election management bodies?"*
+
+
+**Right to Form Political Parties**
+
+Variable Name: Assembly
+
+Variable Type: Numerical
+
+Variable Description: Question B1 on the Freedom in the World report. Values between 0 and 4; 4 is the best rating while 0 is the worst rating.
+
+*"Do the people have the right to organize in different political parties or other competitive political groupings of their choice, and is the system free of undue obstacles to the rise and fall of these competing parties or groupings?"*
+
+
+**Chance for Opposition to Come to Power**
+
+Variable Name: Opposition.Chance
+
+Variable Type: Numerical
+
+Variable Description: Question B2 on the Freedom in the World report. Values between 0 and 4; 4 is the best rating while 0 is the worst rating.
+
+*"Is there a realistic opportunity for the opposition to increase its support or gain power through elections?"*
+
+
+**External Pressure Impacting People's Choices**
+
+Variable Name: Ext.Pol.Pressure
+
+Variable Type: Numerical
+
+Variable Description: Question B3 on the Freedom in the World report. Values between 0 and 4; 4 is the best rating while 0 is the worst rating.
+
+*"Are the people’s political choices free from domination by forces that are external to the political sphere, or by political forces that employ extrapolitical means?"*
+
+
+**Equal Political Rights for Total Population**
+
+Variable Name: Equal.Vote
+
+Variable Type: Numerical
+
+Variable Description: Question B4 on the Freedom in the World report. Values between 0 and 4; 4 is the best rating while 0 is the worst rating.
+
+*"Do various segments of the population (including ethnic, racial, religious, gender, LGBT+, and other relevant groups) have full political rights and electoral opportunities?"*
+
+
+**Independent Policymaking**
+
+Variable Name: Policy
+
+Variable Type: Numerical
+
+Variable Description: Question C1 on the Freedom in the World report. Values between 0 and 4; 4 is the best rating while 0 is the worst rating.
+
+*"Do the freely elected head of government and national legislative representatives determine the policies of the government?"*
+
+
+**Anti-Corruption Safeguards**
+
+Variable Name: Corruption
+
+Variable Type: Numerical
+
+Variable Description: Question C2 on the Freedom in the World report. Values between 0 and 4; 4 is the best rating while 0 is the worst rating.
+
+*"Are safeguards against official corruption strong and effective?"*
+
+
+**Government Transparency**
+
+Variable Name: Transparency
+
+Variable Type: Numerical
+
+Variable Description: Question C3 on the Freedom in the World report. Values between 0 and 4; 4 is the best rating while 0 is the worst rating.
+
+*"Does the government operate with openness and transparency?"*
+
+**Extra Question**
+
+Variable Name: Extra.Q
+
+Variable Type: Numerical
+
+Variable Description: Used if there is severe targeting of a minority group that impacts political participation. This is up to the level of genocide. Scores in this column subtract from the "Political Rights" aggregate score.
+
+
+**Extra Question 2**
+
+Variable Name: Extra.Q2
+
+Variable Type: Numerical
+
+Variable Description: Used for other exceptional cases that negatively affect political rights in a country.
+
+
+**Political Rating**
+
+Variable Name: Political.Rating
+
+Variable Type: Numerical
+
+Variable Description: The aggregate of all previous questions' scores. The maximum score is 40.
+
+```{r}
+FIW.FSU = read.csv("FIW.FSU.2019-2023.csv")
+mean.political.rights= mean(FIW.FSU[,17])
+kable(mean.political.rights, format = "markdown", col.names = "Average Political Rating")
+```
