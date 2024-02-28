@@ -1,0 +1,76 @@
+"Country","Region","Year","Status","HOG.Free","Leg.Free","Legal.Framework","Assembly","Opposition.Chance","Ext.Pol.Pressure","Equal.Vote","Policy","Corruption","Transparency","Extra.Q","Extra.Q2","Political.Rating"
+"Armenia","Eurasia","2023","Partly Free",2,2,3,3,3,2,2,2,2,2,0,NA,23
+"Azerbaijan","Eurasia","2023","Not Free",0,0,0,1,0,1,0,0,0,0,0,NA,2
+"Belarus","Eurasia","2023","Not Free",0,0,0,0,0,0,1,0,1,0,0,NA,2
+"Estonia","Europe","2023","Free",4,4,4,4,4,4,3,4,3,4,0,NA,38
+"Georgia","Eurasia","2023","Partly Free",2,2,3,2,2,2,2,2,2,3,0,NA,22
+"Kazakhstan","Eurasia","2023","Not Free",0,0,1,1,0,1,1,0,1,0,0,NA,5
+"Kyrgyzstan","Eurasia","2023","Not Free",0,1,1,1,1,0,1,0,0,0,1,NA,4
+"Latvia","Europe","2023","Free",4,4,4,4,4,4,3,4,3,3,0,NA,37
+"Lithuania","Europe","2023","Free",4,4,4,4,4,4,4,4,3,3,0,NA,38
+"Moldova","Eurasia","2023","Partly Free",4,3,3,3,4,2,3,3,1,1,0,NA,27
+"Russia","Eurasia","2023","Not Free",0,0,0,1,0,1,1,0,1,1,0,NA,5
+"Tajikistan","Eurasia","2023","Not Free",0,0,0,0,0,0,0,0,0,0,0,NA,0
+"Turkmenistan","Eurasia","2023","Not Free",0,0,0,0,0,0,0,0,0,0,0,NA,0
+"Ukraine","Eurasia","2023","Partly Free",4,3,2,2,4,2,3,2,1,1,2,NA,22
+"Uzbekistan","Eurasia","2023","Not Free",0,0,1,0,0,0,0,0,0,1,0,NA,2
+"Armenia","Eurasia","2022","Partly Free",2,2,3,3,3,2,2,2,2,2,0,NA,23
+"Azerbaijan","Eurasia","2022","Not Free",0,0,0,1,0,1,0,0,0,0,0,NA,2
+"Belarus","Eurasia","2022","Not Free",0,0,0,0,0,0,1,0,1,0,0,NA,2
+"Estonia","Europe","2022","Free",4,4,4,4,4,4,3,4,3,4,0,NA,38
+"Georgia","Eurasia","2022","Partly Free",2,2,3,2,2,2,2,2,2,3,0,NA,22
+"Kazakhstan","Eurasia","2022","Not Free",0,0,1,1,0,1,1,0,1,0,0,NA,5
+"Kyrgyzstan","Eurasia","2022","Not Free",0,1,1,1,1,0,1,0,0,0,1,NA,4
+"Latvia","Europe","2022","Free",4,4,4,4,4,4,3,4,3,3,0,NA,37
+"Lithuania","Europe","2022","Free",4,4,4,4,4,4,4,4,3,3,0,NA,38
+"Moldova","Eurasia","2022","Partly Free",4,3,3,3,4,2,3,3,1,1,0,NA,27
+"Russia","Eurasia","2022","Not Free",0,0,0,1,0,1,1,0,1,1,0,NA,5
+"Tajikistan","Eurasia","2022","Not Free",0,0,0,0,0,0,0,0,0,0,0,NA,0
+"Turkmenistan","Eurasia","2022","Not Free",0,0,0,0,0,0,0,0,0,0,0,NA,0
+"Ukraine","Eurasia","2022","Partly Free",4,3,2,3,4,2,3,3,1,1,0,NA,26
+"Uzbekistan","Eurasia","2022","Not Free",0,0,1,0,0,0,0,0,0,1,0,NA,2
+"Armenia","Eurasia","2021","Partly Free",2,2,2,3,3,2,2,2,2,2,0,NA,22
+"Azerbaijan","Eurasia","2021","Not Free",0,0,0,1,0,1,0,0,0,0,0,NA,2
+"Belarus","Eurasia","2021","Not Free",0,0,0,0,0,0,1,0,1,0,0,NA,2
+"Estonia","Europe","2021","Free",4,4,4,4,4,4,3,4,3,4,0,NA,38
+"Georgia","Eurasia","2021","Partly Free",2,2,3,2,3,2,2,2,2,3,0,NA,23
+"Kazakhstan","Eurasia","2021","Not Free",0,0,1,1,0,1,1,0,1,0,0,NA,5
+"Kyrgyzstan","Eurasia","2021","Not Free",0,1,1,1,1,0,1,0,0,0,1,NA,4
+"Latvia","Europe","2021","Free",4,4,4,4,4,4,3,4,3,3,0,NA,37
+"Lithuania","Europe","2021","Free",4,4,4,4,4,4,4,4,3,3,0,NA,38
+"Moldova","Eurasia","2021","Partly Free",4,3,2,3,4,2,3,3,1,1,0,NA,26
+"Russia","Eurasia","2021","Not Free",0,0,0,1,0,1,1,0,1,1,0,NA,5
+"Tajikistan","Eurasia","2021","Not Free",0,0,0,0,0,0,0,0,0,0,0,NA,0
+"Turkmenistan","Eurasia","2021","Not Free",0,0,0,0,0,0,0,0,0,0,0,NA,0
+"Ukraine","Eurasia","2021","Partly Free",4,3,2,3,4,2,3,3,1,1,0,NA,26
+"Uzbekistan","Eurasia","2021","Not Free",0,0,1,0,0,0,0,0,0,1,0,NA,2
+"Armenia","Eurasia","2020","Partly Free",2,2,2,3,3,2,2,2,1,2,0,NA,21
+"Azerbaijan","Eurasia","2020","Not Free",0,0,0,1,0,1,0,0,0,0,0,NA,2
+"Belarus","Eurasia","2020","Not Free",0,0,0,1,0,1,1,0,1,1,0,NA,5
+"Estonia","Europe","2020","Free",4,4,4,4,4,4,3,4,3,4,0,NA,38
+"Georgia","Eurasia","2020","Partly Free",2,3,3,2,3,2,2,2,2,3,0,NA,24
+"Kazakhstan","Eurasia","2020","Not Free",0,0,1,1,0,1,1,0,1,0,0,NA,5
+"Kyrgyzstan","Eurasia","2020","Partly Free",1,2,1,2,1,1,1,1,1,2,1,NA,12
+"Latvia","Europe","2020","Free",4,4,4,4,4,4,3,4,3,3,0,NA,37
+"Lithuania","Europe","2020","Free",4,4,4,4,4,4,4,4,3,3,0,NA,38
+"Moldova","Eurasia","2020","Partly Free",4,3,2,3,4,2,3,3,1,1,0,NA,26
+"Russia","Eurasia","2020","Not Free",0,0,0,1,0,1,1,0,1,1,0,NA,5
+"Tajikistan","Eurasia","2020","Not Free",0,0,0,0,0,0,0,0,0,0,0,NA,0
+"Turkmenistan","Eurasia","2020","Not Free",0,0,0,0,0,0,0,0,0,0,0,NA,0
+"Ukraine","Eurasia","2020","Partly Free",4,3,2,3,4,2,3,3,1,2,0,NA,27
+"Uzbekistan","Eurasia","2020","Not Free",0,0,1,0,0,0,0,0,0,1,0,NA,2
+"Armenia","Eurasia","2019","Partly Free",2,2,2,3,3,2,2,1,1,2,0,NA,20
+"Azerbaijan","Eurasia","2019","Not Free",0,0,0,1,0,1,0,0,0,0,0,NA,2
+"Belarus","Eurasia","2019","Not Free",0,0,0,1,0,1,1,0,1,1,0,NA,5
+"Estonia","Europe","2019","Free",4,4,4,4,4,4,3,4,3,4,0,NA,38
+"Georgia","Eurasia","2019","Partly Free",2,3,3,3,3,2,2,2,2,3,0,NA,25
+"Kazakhstan","Eurasia","2019","Not Free",0,0,1,1,0,1,1,0,1,0,0,NA,5
+"Kyrgyzstan","Eurasia","2019","Partly Free",1,2,1,2,1,1,1,1,1,2,1,NA,12
+"Latvia","Europe","2019","Free",4,4,4,4,4,3,3,3,3,3,0,NA,35
+"Lithuania","Europe","2019","Free",4,4,4,4,4,4,4,4,3,3,0,NA,38
+"Moldova","Eurasia","2019","Partly Free",4,3,2,3,3,2,3,2,1,1,0,NA,24
+"Russia","Eurasia","2019","Not Free",0,0,0,1,0,1,1,0,1,1,0,NA,5
+"Tajikistan","Eurasia","2019","Not Free",0,0,0,0,0,0,0,0,0,0,0,NA,0
+"Turkmenistan","Eurasia","2019","Not Free",0,0,0,0,0,0,0,0,0,0,0,NA,0
+"Ukraine","Eurasia","2019","Partly Free",4,3,2,3,3,2,3,3,1,2,0,NA,26
+"Uzbekistan","Eurasia","2019","Not Free",0,0,0,0,0,0,0,0,0,1,0,NA,1
